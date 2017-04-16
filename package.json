@@ -1,0 +1,33 @@
+{
+  "name": "app-manager",
+  "version": "0.0.1",
+  "description": "Server Application Manager",
+  "main": "src/core/main.js",
+  "scripts": {
+    "start": "npm run start:dev",
+    "start:dev": "electron . dev",
+    "start:prod": "electron .",
+    "build": "npm run build:all",
+    "build:all": "electron-packager . AM --all --out=Release --asar=true --overwrite",
+    "build:macos": "electron-packager . AM --platform=darwin --out=Release --asar=true --overwrite",
+    "build:windows": "electron-packager . AM --platform=win32 --out=Release --asar=true --overwrite",
+    "build:linux": "electron-packager . AM --platform=linux --out=Release --asar=true --overwrite",
+    "clean": "rimraf Release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/norux/app-manager.git"
+  },
+  "author": "The A.M. Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/norux/app-manager/issues"
+  },
+  "homepage": "https://github.com/norux/app-manager#readme",
+  "devDependencies": {
+    "electron": "^1.6.2",
+    "electron-packager": "^8.6.0",
+    "npm-run-all": "^4.0.2",
+    "rimraf": "^2.6.1"
+  }
+}
