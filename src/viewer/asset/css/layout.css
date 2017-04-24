@@ -1,0 +1,16 @@
+/*AM html element Init*/
+html, body{width:100%;height:100%;}
+html, body, div, span{margin:0; padding:0;}
+
+/*AM layout Style*/
+.ly-box{padding: 15px; border:2px solid #000;}
+.am-mainWrap{box-sizing:border-box;padding:10px;width:100%;height:100%;min-width:1024px;}
+.am-header{box-sizing:border-box;height:80px;margin-bottom:10px;}
+.am-gnb li{width:100px;float:left;}
+.am-gnb .config{float:right;}
+.am-gnb:after{display:block;content:'';width:0;height:0;clear:both;}
+.am-toolbar{box-sizing:border-box;height:60px;margin-bottom:10px;}
+.am-contents{box-sizing:border-box;padding:0}
+.am-contents:after{display:block;content:'';width:0;height:0;clear:both;}
+.am-left-menu{box-sizing:border-box;margin-right:10px;width:200px;float:left;}
+.am-right-content{box-sizing:border-box;float:left;}
